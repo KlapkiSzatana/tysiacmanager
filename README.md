@@ -103,6 +103,7 @@ Postępuj zgodnie z instrukcjami w terminalu.
 Jeśli wolisz pełną kontrolę nad procesem, wykonaj poniższe kroki w terminalu:
 
 1. Przygotuj środowisko:
+
    Dla Ubuntu/Debian użyj python3, dla Arch użyj python
    ```bash
    python -m venv venv
@@ -146,7 +147,7 @@ W katalogu z aplikacją uruchom:
 ./uninstall.sh
 ```
 
-##ℹ️ Ważne informacje
+### ℹ️ Ważne informacje
 
     Baza Danych: Niezależnie od sposobu instalacji, baza danych oraz logi są przechowywane w katalogu domowym użytkownika: ~/Tysiac_Manager/ (Dzięki temu nie są wymagane uprawnienia roota do zapisu wyników).
 
