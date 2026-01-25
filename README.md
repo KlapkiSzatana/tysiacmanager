@@ -29,6 +29,12 @@ Aplikacja śledzi osiągnięcia graczy w czasie rzeczywistym:
 * **Królowie Meldunków:** Kto najczęściej melduje.
 * **Łowcy "Setek":** Kto najczęściej zgłasza meldunek 100 pkt (♥).
 
+## 📸 Zrzut ekranu
+<p align="center">
+  <img src="screenshots/screen1.png" width="45%" alt="Ekran główny">
+  &nbsp; &nbsp; <img src="screenshots/screen2.png" width="45%" alt="Ekran ustawień">
+</p>
+
 ---
 
 ### 🛠️ Technologie
