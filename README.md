@@ -121,9 +121,9 @@ W katalogu z aplikacją uruchom:
 
 ### ℹ️ Ważne informacje
 
-    Baza Danych: Niezależnie od sposobu instalacji, baza danych oraz logi są przechowywane w katalogu domowym użytkownika: ~/Tysiac_Manager/ (Dzięki temu nie są wymagane uprawnienia roota do zapisu wyników).
+Baza Danych: Niezależnie od sposobu instalacji, baza danych jest przechowywana w katalogu domowym użytkownika: ~/Tysiac_Manager/ (Dzięki temu nie są wymagane uprawnienia roota do zapisu wyników).
 
-    Wymagania: Do poprawnego zbudowania aplikacji, w folderze głównym musi znajdować się plik ikony tysiac.png.
+Wymagania: Do poprawnego zbudowania aplikacji, w folderze głównym musi znajdować się plik ikony tysiac.png.
 
 
 **Projekt jest rozwijany hobbystycznie metodą "AI-Assisted Development"**
