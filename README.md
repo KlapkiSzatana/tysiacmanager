@@ -53,12 +53,12 @@ git clone [https://github.com/KlapkiSzatana/TysiacManager.git](https://github.co
 cd TysiacManager
 ```
 **2. Przygotowanie środowiska**
-# Linux / macOS
+**Linux / macOS**
 ```bash
 python -m venv venv
 source venv/bin/activate
 ```
-# Windows
+**Windows**
 ```bash
 python -m venv venv
 venv\Scripts\activate
@@ -73,5 +73,5 @@ python tysiac.py
 ```
 ---
 
-## Projekt jest rozwijany hobbystycznie metodą "AI-Assisted Development".
+**Projekt jest rozwijany hobbystycznie metodą "AI-Assisted Development"**
 ©️ 2025 KlapkiSzatana. Projekt Open Source.
