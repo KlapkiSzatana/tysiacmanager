@@ -42,7 +42,7 @@ Projekt został stworzony w języku **Python** przy użyciu bibliotek:
 ### 📥 Instalacja i Uruchomienie
 
 ## Wymagania
-* Python 3.8 lub nowszy
+* Python 3.8 lub nowszy (3.14 sprawia kłopoty)
 * System: Linux
 
 ## Instrukcja krok po kroku
@@ -55,12 +55,12 @@ cd TysiacManager
 **2. Przygotowanie środowiska**
 **Linux / macOS**
 ```bash
-python -m venv venv
+python3 -m venv venv
 source venv/bin/activate
 ```
 **Windows**
 ```bash
-python -m venv venv
+python3 -m venv venv
 venv\Scripts\activate
 ```
 **3. Instalacja bibliotek**
@@ -104,7 +104,7 @@ Jeśli wolisz pełną kontrolę nad procesem, wykonaj poniższe kroki w terminal
 
 1. Przygotuj środowisko:
 
-   Dla Ubuntu/Debian użyj python3, dla Arch użyj python
+   Dla Ubuntu/Debian użyj python3, dla Arch użyj python3 lub python (niższego niż 3.14)
    ```bash
    python -m venv venv
    source venv/bin/activate
