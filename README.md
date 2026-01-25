@@ -45,34 +45,6 @@ Projekt został stworzony w języku **Python** przy użyciu bibliotek:
 * Python 3.8 lub nowszy (3.14 sprawia kłopoty)
 * System: Linux
 
-## Instrukcja krok po kroku
-
-**1. Pobranie kodu**
-```bash
-git clone https://github.com/KlapkiSzatana/TysiacManager.git
-cd TysiacManager
-```
-**2. Przygotowanie środowiska**
-**Linux / macOS**
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-**Windows**
-```bash
-python3 -m venv venv
-venv\Scripts\activate
-```
-**3. Instalacja bibliotek**
-```bash
-pip install PySide6
-```
-**4. Uruchomienie aplikacji**
-```bash
-python tysiac.py
-```
----
-
 ## 🏗️ Budowanie i Instalacja (Linux)
 
 Aplikacja jest przystosowana do działania na systemach Linux (testowano na CachyOS oraz pop_OS). Projekt zawiera skrypt automatyzujący proces budowania samodzielnej paczki (standalone) przy użyciu **Nuitka**.
@@ -82,8 +54,8 @@ Aplikacja jest przystosowana do działania na systemach Linux (testowano na Cach
 Skrypt `build.sh` automatycznie:
 1. Wykrywa wersję Pythona.
 2. Tworzy środowisko wirtualne i pobiera zależności.
-3. Kompiluje grę do wersji binarnej.
-4. **(Opcjonalnie)** Instaluje grę w systemie (`/opt`), dodając skrót do menu aplikacji.
+3. Kompiluje aplikację do wersji binarnej.
+4. **(Opcjonalnie)** Instaluje ją w systemie (`/opt`), dodając skrót do menu aplikacji.
 
 **Instrukcja:**
 
@@ -108,7 +80,7 @@ Jeśli wolisz pełną kontrolę nad procesem, wykonaj poniższe kroki w terminal
    ```bash
    python -m venv venv
    source venv/bin/activate
-   pip install pyside6 nuitka zstandard
+   pip install -r requirements.txt
    ```
    
 2. Skompiluj aplikację:
@@ -130,7 +102,7 @@ Jeśli wolisz pełną kontrolę nad procesem, wykonaj poniższe kroki w terminal
 
 ## 📦 Instalacja z gotowej paczki (Linux)
 
-1. Pobierz plik `.zip` lub `.tar.gz` z zakładki **Releases**.
+1. Pobierz plik `.zip` z zakładki **Releases**.
 2. Rozpakuj archiwum.
 3. Wejdź do folderu i uruchom instalator:
    ```bash
@@ -141,7 +113,7 @@ Jeśli wolisz pełną kontrolę nad procesem, wykonaj poniższe kroki w terminal
 
 Jeśli zainstalowałeś w systemie używając skryptu `install.sh`, możesz ją łatwo usunąć.
 
-## Metoda 1: Użycie skryptu (jeśli nadal masz folder pobrany z Releases)
+## Użycie skryptu (/opt/tysiac_manager lub w pobranym z Releases)
 W katalogu z aplikacją uruchom:
 ```bash
 ./uninstall.sh
