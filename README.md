@@ -74,4 +74,5 @@ python tysiac.py
 ---
 
 **Projekt jest rozwijany hobbystycznie metodą "AI-Assisted Development"**
+
 ©️ 2025 KlapkiSzatana. Projekt Open Source.
