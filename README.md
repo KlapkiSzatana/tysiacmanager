@@ -103,7 +103,7 @@ Postępuj zgodnie z instrukcjami w terminalu.
 Jeśli wolisz pełną kontrolę nad procesem, wykonaj poniższe kroki w terminalu:
 
 1. Przygotuj środowisko:
-   # Dla Ubuntu/Debian użyj python3, dla Arch użyj python
+   Dla Ubuntu/Debian użyj python3, dla Arch użyj python
    ```bash
    python -m venv venv
    source venv/bin/activate
