@@ -49,7 +49,7 @@ Projekt został stworzony w języku **Python** przy użyciu bibliotek:
 
 **1. Pobranie kodu**
 ```bash
-git clone [https://github.com/KlapkiSzatana/TysiacManager.git](https://github.com/KlapkiSzatana/TysiacManager.git)
+git clone https://github.com/KlapkiSzatana/TysiacManager.git
 cd TysiacManager
 ```
 **2. Przygotowanie środowiska**
