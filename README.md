@@ -43,7 +43,7 @@ Projekt został stworzony w języku **Python** przy użyciu bibliotek:
 
 ## Wymagania
 * Python 3.8 lub nowszy
-* System: Linux / Windows / macOS
+* System: Linux
 
 ## Instrukcja krok po kroku
 
