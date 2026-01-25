@@ -51,22 +51,26 @@ Projekt został stworzony w języku **Python** przy użyciu bibliotek:
 ```bash
 git clone [https://github.com/KlapkiSzatana/TysiacManager.git](https://github.com/KlapkiSzatana/TysiacManager.git)
 cd TysiacManager
-
+```
 **2. Przygotowanie środowiska**
 # Linux / macOS
+```bash
 python -m venv venv
 source venv/bin/activate
-
+```
 # Windows
+```bash
 python -m venv venv
 venv\Scripts\activate
-
+```
 **3. Instalacja bibliotek**
+```bash
 pip install PySide6
-
+```
 **4. Uruchomienie aplikacji**
+```bash
 python tysiac.py
-
+```
 ---
 
 ## Projekt jest rozwijany hobbystycznie metodą "AI-Assisted Development".
