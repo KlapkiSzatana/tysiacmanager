@@ -2,6 +2,7 @@ import sys
 import sqlite3
 import random
 import os
+from pathlib import Path
 from datetime import datetime
 from PySide6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
                                QHBoxLayout, QLabel, QLineEdit, QPushButton,
@@ -12,6 +13,8 @@ from PySide6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
 from PySide6.QtCore import Qt, QRegularExpression, QSize
 from PySide6.QtGui import QFont, QColor, QRegularExpressionValidator, QIcon
 
+basedir = os.path.dirname(__file__)
+icon_path = os.path.join(basedir, "tysiac.png")
 # --- KONFIGURACJA APLIKACJI ---
 APP_VERSION = "0.9.1"
 
@@ -26,7 +29,10 @@ except ImportError:
 # ==========================================
 class TysiacDB:
     def __init__(self, db_name="tysiac.db"):
-        self.conn = sqlite3.connect(db_name)
+        user_dir = os.path.expanduser("~/Tysiac_Manager")
+        Path(user_dir).mkdir(parents=True, exist_ok=True)
+        self.db_path = os.path.join(user_dir, db_name)
+        self.conn = sqlite3.connect(self.db_path)
         self.create_tables()
         self.update_schema()
 
@@ -1088,8 +1094,12 @@ class MainWindow(QMainWindow):
 if __name__ == "__main__":
     app = QApplication(sys.argv)
 
+    # Pobieramy ID ze zmiennej środowiskowej, domyślnie 'tysiac-manager'
+    desktop_id = os.environ.get("APP_ID", "tysiac-manager")
+    app.setDesktopFileName(desktop_id)
+
     # Ładowanie ikony (musi być plik tysiac.png obok skryptu)
-    app.setWindowIcon(QIcon("tysiac.png"))
+    app.setWindowIcon(QIcon(icon_path))
 
     if HAS_THEME:
         qdarktheme.setup_theme("auto")
