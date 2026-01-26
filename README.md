@@ -51,7 +51,43 @@ Projekt został stworzony w języku **Python** przy użyciu bibliotek:
 * Python 3.8 lub nowszy (3.14 sprawia kłopoty)
 * System: Linux
 
-## 🏗️ Budowanie i Instalacja (Linux)
+## 🐧 Instalacja na Arch Linux / Manjaro / CachyOS (PKGBUILD)
+
+Dla użytkowników dystrybucji opartych na Arch Linux przygotowany został natywny plik PKGBUILD. Pozwala on zbudować i zainstalować aplikację, wykorzystując systemowego menedżera pakietów pacman.
+Zalety tej metody:
+
+    ✅ Czystość: System wie o wszystkich zainstalowanych plikach.
+
+    ✅ Automatyzacja: Zależności (python, pyside6) zostaną zainstalowane automatycznie.
+
+    ✅ Integracja: Gra pojawi się w menu start i systemowych wynikach wyszukiwania.
+
+# Instrukcja krok po kroku:
+
+    Upewnij się, że w folderze z projektem znajdują się pliki: PKGBUILD, tysiac.desktop, tysiac.png oraz kod źródłowy gry.
+
+    Otwórz terminal w tym folderze i uruchom polecenie budowania:
+   ```bash
+   makepkg -si
+   ```
+* Flaga -s: Automatycznie pobierze i zainstaluje brakujące zależności.
+
+* Flaga -i: Po zbudowaniu paczki, od razu ją zainstaluje w systemie.
+
+Po zakończeniu instalacji możesz uruchomić grę wpisując w terminalu:
+   ```bash
+   tysiac-manager
+   ```
+Lub wyszukując "Menedżer Gry 1000" w menu aplikacji Twojego środowiska graficznego.
+
+# Odinstalowanie
+
+Aby usunąć grę z systemu, użyj standardowego polecenia pacmana:
+   ```bash
+   sudo pacman -Rns tysiac-manager
+   ```
+   
+## 🏗️ Budowanie i Instalacja (Linux inne)
 
 Aplikacja jest przystosowana do działania na systemach Linux (testowano na CachyOS oraz pop_OS). Projekt zawiera skrypt automatyzujący proces budowania samodzielnej paczki (standalone) przy użyciu **Nuitka**.
 
