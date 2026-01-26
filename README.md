@@ -56,17 +56,17 @@ Projekt został stworzony w języku **Python** przy użyciu bibliotek:
 Dla użytkowników dystrybucji opartych na Arch Linux przygotowany został natywny plik PKGBUILD. Pozwala on zbudować i zainstalować aplikację, wykorzystując systemowego menedżera pakietów pacman.
 Zalety tej metody:
 
-    ✅ Czystość: System wie o wszystkich zainstalowanych plikach.
+  ✅ Czystość: System wie o wszystkich zainstalowanych plikach.
 
-    ✅ Automatyzacja: Zależności (python, pyside6) zostaną zainstalowane automatycznie.
+  ✅ Automatyzacja: Zależności (python, pyside6) zostaną zainstalowane automatycznie.
 
-    ✅ Integracja: Gra pojawi się w menu start i systemowych wynikach wyszukiwania.
+  ✅ Integracja: Gra pojawi się w menu start i systemowych wynikach wyszukiwania.
 
 # Instrukcja krok po kroku:
 
-    Upewnij się, że w folderze z projektem znajdują się pliki: PKGBUILD, tysiac.desktop, tysiac.png oraz kod źródłowy gry.
+  Upewnij się, że w folderze z projektem znajdują się pliki: PKGBUILD, tysiac.desktop, tysiac.png oraz kod źródłowy gry.
 
-    Otwórz terminal w tym folderze i uruchom polecenie budowania:
+  Otwórz terminal w tym folderze i uruchom polecenie budowania:
    ```bash
    makepkg -si
    ```
