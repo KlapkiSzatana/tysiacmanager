@@ -121,6 +121,7 @@ fi
 echo ""
 read -p "❓ Czy zainstalować grę w systemie (/opt)? [t/N]: " choice
 if [[ "$choice" =~ ^[TtYy]$ ]]; then
-    cd "dist/${APP_NAME}.dist"
-    ./install.sh
+    # ZMIANA: Nie wchodzimy do katalogu, odpalamy instalator stąd.
+    # Używamy sudo, bo instalacja idzie do /opt
+    sudo ./install.sh
 fi
