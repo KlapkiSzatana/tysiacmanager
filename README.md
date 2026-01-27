@@ -13,7 +13,7 @@ Aplikacja posiada interfejs graficzny oparty o bibliotekę **Qt (PySide6)** oraz
 * [🚀 Główne Funkcje](#-główne-funkcje)
 * [📥 Instalacja i Uruchomienie](#-instalacja-i-uruchomienie)
   * [🐧 Instalacja na Arch Linux / Manjaro / CachyOS (PKGBUILD)](#-instalacja-na-arch-linux-cachyos-pkgbuild)
-  * [🏗️ Budowanie i Instalacja (Linux inne)](#budowanie-i-instalacja-linux-inne)
+  * [🏗️ Budowanie i Instalacja (Linux inne)](#%EF%B8%8F-budowanie-i-instalacja-linux-inne)
   * [📦 Instalacja z gotowej paczki (Linux)](#-instalacja-z-gotowej-paczki-linux)
 * [ℹ️ Ważne informacje](#ℹ%EF%B8%8F-ważne-informacje)
 
