@@ -13,9 +13,9 @@ Aplikacja posiada interfejs graficzny oparty o bibliotekę **Qt (PySide6)** oraz
 * [🚀 Główne Funkcje](#-główne-funkcje)
 * [📥 Instalacja i Uruchomienie](#-instalacja-i-uruchomienie)
   * [🐧 Instalacja na Arch Linux / Manjaro / CachyOS (PKGBUILD)](#-instalacja-na-arch-linux--manjaro--cachyos-pkgbuild)
-  * [🏗️ Budowanie i Instalacja (Linux inne)](#-budowanie-i-instalacja-linux-inne)
+  * [🏗️ Budowanie i Instalacja (Linux inne)](#budowanie-i-instalacja-linux-inne)
   * [📦 Instalacja z gotowej paczki (Linux)](#-instalacja-z-gotowej-paczki-linux)
-* [ℹ️ Ważne informacje](#-ważne-informacje)
+* [ℹ️ Ważne informacje](#ważne-informacje)
 
 ## 🚀 Główne Funkcje
 
@@ -59,7 +59,7 @@ Projekt został stworzony w języku **Python** przy użyciu bibliotek:
 * Python 3.8 lub nowszy (3.14 sprawia kłopoty)
 * System: Linux
 
-## 🐧 Instalacja na Arch Linux / Manjaro / CachyOS (PKGBUILD)
+## 🐧 Instalacja na Arch Linux, CachyOS (PKGBUILD)
 
 Dla użytkowników dystrybucji opartych na Arch Linux przygotowany został natywny plik PKGBUILD. Pozwala on zbudować i zainstalować aplikację, wykorzystując systemowego menedżera pakietów pacman.
 Zalety tej metody:
