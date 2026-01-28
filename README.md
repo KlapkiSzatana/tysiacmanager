@@ -88,7 +88,7 @@ Wystarczy wykonać te dwie komendy. Skrypt sam pobierze najnowszą wersję gry i
 
   * Flaga -i: Po zbudowaniu od razu instaluje paczkę w systemie.
 
-Po zakończeniu instalacji możesz uruchomić grę wpisując w terminalu:
+Po zakończeniu instalacji możesz uruchomić aplikację wpisując w terminalu:
    ```bash
    tysiac-manager
    ```
