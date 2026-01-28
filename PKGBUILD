@@ -12,7 +12,7 @@ makedepends=('git')
 # ZMIANA 1: Źródłem jest teraz archiwum z GitHuba, a nie pliki lokalne!
 source=("${url}/archive/refs/tags/v${pkgver}.tar.gz")
 
-sha256sums=('0ce850d279a25931b365161e89068e995f57b24dc701d3af26cfc5958c34759d')
+sha256sums=('SKIP')
 
 package() {
     # ZMIANA 2: Po pobraniu archiwum, pliki są w folderze z nazwą repo i wersją
