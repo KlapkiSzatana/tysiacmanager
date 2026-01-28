@@ -55,11 +55,11 @@ Projekt został stworzony w języku **Python** przy użyciu bibliotek:
 
 ### 📥 Instalacja i Uruchomienie
 
-## Wymagania
+### Wymagania
 * Python 3.8 lub nowszy (3.14 sprawia kłopoty)
 * System: Linux
 
-## 🐧 Instalacja na Arch Linux, CachyOS (PKGBUILD)
+### 🐧 Instalacja na Arch Linux, CachyOS (PKGBUILD)
 
 Dla użytkowników dystrybucji opartych na Arch Linux przygotowany został natywny plik PKGBUILD. Pozwala on zbudować i zainstalować aplikację, wykorzystując systemowego menedżera pakietów pacman.
 Zalety tej metody:
@@ -70,7 +70,7 @@ Zalety tej metody:
 
   ✅ Integracja: Aplikacja pojawi się w menu start i systemowych wynikach wyszukiwania.
   
-# 🚀 Szybka instalacja (Terminal)
+### 🚀 Szybka instalacja (Terminal)
 
 Wystarczy wykonać te dwie komendy. Skrypt sam pobierze najnowszą wersję gry i ją zainstaluje:
    ```bash
@@ -78,7 +78,7 @@ Wystarczy wykonać te dwie komendy. Skrypt sam pobierze najnowszą wersję gry i
    makepkg -si
    ```
 
-# ℹ️ Wyjaśnienie flag:
+### ℹ️ Wyjaśnienie flag:
 
   * curl -O ...: Pobiera sam plik przepisu (PKGBUILD) z repozytorium.
 
@@ -94,7 +94,7 @@ Po zakończeniu instalacji możesz uruchomić grę wpisując w terminalu:
    ```
 Lub wyszukując "Menedżer Gry 1000" w menu aplikacji Twojego środowiska graficznego.
 
-# Odinstalowanie
+### Odinstalowanie
 
 Aby usunąć grę z systemu, użyj standardowego polecenia pacmana:
    ```bash
