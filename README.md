@@ -68,19 +68,25 @@ Zalety tej metody:
 
   ✅ Automatyzacja: Zależności (python, pyside6) zostaną zainstalowane automatycznie.
 
-  ✅ Integracja: Gra pojawi się w menu start i systemowych wynikach wyszukiwania.
+  ✅ Integracja: Aplikacja pojawi się w menu start i systemowych wynikach wyszukiwania.
+  
+# 🚀 Szybka instalacja (Terminal)
 
-# Instrukcja krok po kroku:
-
-  Upewnij się, że w folderze z projektem znajdują się pliki: PKGBUILD, tysiac.desktop, tysiac.png oraz kod źródłowy gry.
-
-  Otwórz terminal w tym folderze i uruchom polecenie budowania:
+Wystarczy wykonać te dwie komendy. Skrypt sam pobierze najnowszą wersję gry i ją zainstaluje:
    ```bash
+   curl -O https://raw.githubusercontent.com/KlapkiSzatana/tysiacmanager/main/PKGBUILD
    makepkg -si
    ```
-* Flaga -s: Automatycznie pobierze i zainstaluje brakujące zależności.
 
-* Flaga -i: Po zbudowaniu paczki, od razu ją zainstaluje w systemie.
+# ℹ️ Wyjaśnienie flag:
+
+  * curl -O ...: Pobiera sam plik przepisu (PKGBUILD) z repozytorium.
+
+  * makepkg: Uruchamia proces budowania paczki.
+
+  * Flaga -s: Automatycznie doinstalowuje brakujące zależności.
+
+  * Flaga -i: Po zbudowaniu od razu instaluje paczkę w systemie.
 
 Po zakończeniu instalacji możesz uruchomić grę wpisując w terminalu:
    ```bash
