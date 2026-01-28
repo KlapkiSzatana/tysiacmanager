@@ -6,39 +6,48 @@ pkgdesc="Menedżer Gry 1000"
 arch=('any')
 url="https://github.com/KlapkiSzatana/tysiacmanager"
 license=('GPL-3.0')
-depends=('python' 'pyside6') # Wymagamy tylko Pythona i biblioteki GUI
-makedepends=('git') # Nic specjalnego do budowania nie jest potrzebne
-source=("local://tysiac.py"
-        "local://tysiac.png"
-        "tysiac.desktop")
-sha256sums=('SKIP' 'SKIP' 'SKIP')
+depends=('python' 'pyside6')
+makedepends=('git')
+
+# ZMIANA 1: Źródłem jest teraz archiwum z GitHuba, a nie pliki lokalne!
+source=("${url}/archive/refs/tags/v${pkgver}.tar.gz")
+
+sha256sums=('b3eb5b7085f477f900f956c6a0c328f9aad62071eaba06f9112e486938ee9efb')
 
 package() {
-    # 1. Tworzymy katalog dla aplikacji w /usr/share/tysiac-manager
+    # ZMIANA 2: Po pobraniu archiwum, pliki są w folderze z nazwą repo i wersją
+    cd "tysiacmanager-${pkgver}"
+
+    # 1. Instalacja plików aplikacji
     install -d "${pkgdir}/usr/share/${pkgname}"
     install -m644 tysiac.py "${pkgdir}/usr/share/${pkgname}/tysiac.py"
+
     install -m644 tysiac.png "${pkgdir}/usr/share/${pkgname}/tysiac.png"
 
-    # 2. Tworzymy skrypt startowy (tzw. wrapper) w /usr/bin
+    # 2. Tworzymy skrypt startowy (Wrapper)
     install -d "${pkgdir}/usr/bin"
-
     cat <<EOF > "${pkgdir}/usr/bin/${pkgname}"
 #!/bin/sh
-# Przechodzimy do katalogu, żeby działały ikony (QIcon)
 cd /usr/share/${pkgname}
-
-# Ustawiamy zmienną APP_ID na nazwę pakietu (dynamicznie!)
 export APP_ID="${pkgname}"
-
-# Uruchamiamy grę
 exec /usr/bin/python tysiac.py "\$@"
 EOF
-
-    # Nadajemy uprawnienia wykonywania dla wrappera
     chmod 755 "${pkgdir}/usr/bin/${pkgname}"
 
-    # 3. Instalacja pliku .desktop i ikony
-    install -Dm644 "tysiac.desktop" "${pkgdir}/usr/share/applications/${pkgname}.desktop"
-    install -Dm644 "tysiac.png" "${pkgdir}/usr/share/pixmaps/${pkgname}.png"
+    # 3. Generujemy plik .desktop W LOCIE
+    install -d "${pkgdir}/usr/share/applications"
+    cat <<EOF > "${pkgdir}/usr/share/applications/${pkgname}.desktop"
+[Desktop Entry]
+Name=Menedżer Gry 1000
+Comment=Aplikacja do liczenia punktów w Tysiąca
+Exec=${pkgname}
+Icon=${pkgname}
+Terminal=false
+Type=Application
+Categories=Game;CardGame;
+EOF
 
+    # 4. Instalacja ikony systemowej (żeby .desktop ją widział)
+    install -d "${pkgdir}/usr/share/pixmaps"
+    install -m644 tysiac.png "${pkgdir}/usr/share/pixmaps/${pkgname}.png"
 }
