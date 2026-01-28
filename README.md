@@ -72,7 +72,7 @@ Zalety tej metody:
   
 ### 🚀 Szybka instalacja (Terminal)
 
-Wystarczy wykonać te dwie komendy. Skrypt sam pobierze najnowszą wersję gry i ją zainstaluje:
+Wystarczy wykonać te dwie komendy. Skrypt sam pobierze najnowszą wersję aplikacji i ją zainstaluje:
    ```bash
    curl -O https://raw.githubusercontent.com/KlapkiSzatana/tysiacmanager/main/PKGBUILD
    makepkg -si
@@ -96,7 +96,7 @@ Lub wyszukując "Menedżer Gry 1000" w menu aplikacji Twojego środowiska grafic
 
 ### Odinstalowanie
 
-Aby usunąć grę z systemu, użyj standardowego polecenia pacmana:
+Aby usunąć aplikację z systemu, użyj standardowego polecenia pacmana:
    ```bash
    sudo pacman -Rns tysiac-manager
    ```
